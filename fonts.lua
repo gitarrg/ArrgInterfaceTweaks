@@ -5,7 +5,7 @@ local ADDON_NAME = ...
 local NS = select(2, ...)
 
 
-local FONT_NAME = "Interface/Addons/" .. ADDON_NAME .. "media/fonts/Cabin.ttf"
+local FONT_NAME = "Interface/Addons/" .. ADDON_NAME .. "/media/fonts/Cabin.ttf"
 
 
 _G.UNIT_NAME_FONT = FONT_NAME
