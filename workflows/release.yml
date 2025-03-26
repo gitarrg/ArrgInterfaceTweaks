@@ -1,0 +1,21 @@
+name: Package and release
+
+permissions:
+  contents: write  # allow to create releases
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    env:
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: BigWigsMods/packager@v2
