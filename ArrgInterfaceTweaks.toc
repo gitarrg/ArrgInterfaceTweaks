@@ -1,5 +1,5 @@
 ## Interface: 110100
-## Title: Arrg Interface Teaks
+## Title: Arrg Interface Tweaks
 ## Version: @project-version@
 ## Author: Arrg
 ## OptionalDeps: WeakAuras
@@ -7,3 +7,4 @@
 
 main.lua
 fonts.lua
+auto_vendor_and_repair.lua
