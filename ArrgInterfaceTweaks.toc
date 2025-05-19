@@ -1,6 +1,7 @@
 ## Interface: 110100
 ## Title: Arrg Interface Tweaks
 ## Version: @project-version@
+## IconTexture: Interface\AddOns\ArrgInterfaceTweaks\media\icons\peepoHappySquare.png
 ## Author: Arrg
 ## OptionalDeps: WeakAuras
 ## DefaultState: Enable
@@ -8,3 +9,4 @@
 main.lua
 fonts.lua
 auto_vendor_and_repair.lua
+tooltip_ids.lua
