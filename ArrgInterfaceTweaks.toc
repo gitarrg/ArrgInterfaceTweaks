@@ -10,3 +10,4 @@ main.lua
 fonts.lua
 auto_vendor_and_repair.lua
 tooltip_ids.lua
+bags.lua
