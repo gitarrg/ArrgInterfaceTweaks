@@ -37,23 +37,12 @@ local BARS = {
 
 local FRAMES = {}
 
+local ALPHA_HIDDEN = 0.0
+local ALPHA_SHOWN = 1.0
+
 
 -- flags
 local mouse_over = false
-
--- local SHOW = true
-
-local function show()
-    for _, frame in pairs(FRAMES) do
-        frame:SetAlpha(1)
-    end
-end
-
-local function hide()
-    for _, frame in pairs(FRAMES) do
-        frame:SetAlpha(0.25)
-    end
-end
 
 
 local function should_show()
@@ -76,7 +65,7 @@ end
 
 local function update()
 
-    local alpha = should_show() and 1.0 or 0.25
+    local alpha = should_show() and ALPHA_SHOWN or ALPHA_HIDDEN
 
     for _, frame in pairs(FRAMES) do
         frame:SetAlpha(alpha)
