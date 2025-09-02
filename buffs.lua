@@ -15,8 +15,8 @@ local function format_time(time)
         return string.format("%d:%2d", minutes, seconds)
     end
 
-    -- between 30sec and 1min --> "SS s"
-    if time > 10 then
+    -- between 5sec and 1min --> "SS s"
+    if time > 5 then
         return string.format("%d s", time)
     end
 
@@ -31,15 +31,13 @@ local function UpdateDuration(self, timeLeft)
 end
 
 
-local function add_hooks(self)
-    for _, auraFrame in ipairs(self.auraFrames) do
-        -- print("auraFrame", auraFrame)
-        if not auraFrame.__arrg_hooked and auraFrame.UpdateDuration then
-            auraFrame.__arrg_hooked = true
+local function add_hooks(frame)
+    for _, auraFrame in ipairs(frame.auraFrames) do
+        if auraFrame.UpdateDuration then
             hooksecurefunc(auraFrame, "UpdateDuration", UpdateDuration)
         end
     end
 end
 
-hooksecurefunc(BuffFrame, "UpdateAuraButtons", add_hooks)
-hooksecurefunc(DebuffFrame, "UpdateAuraButtons", add_hooks)
+add_hooks(BuffFrame)
+add_hooks(DebuffFrame)
