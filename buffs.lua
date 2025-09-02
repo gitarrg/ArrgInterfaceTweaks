@@ -12,7 +12,7 @@ local function format_time(time)
     if time > SECONDS_PER_MIN then
         local minutes = floor(time / SECONDS_PER_MIN);
         local seconds = time - (minutes * SECONDS_PER_MIN);
-        return string.format("%d:%2d", minutes, seconds)
+        return string.format("%d:%02d", minutes, seconds)
     end
 
     -- between 5sec and 1min --> "SS s"
