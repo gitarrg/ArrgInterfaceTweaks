@@ -6,9 +6,10 @@
 ## OptionalDeps: WeakAuras
 ## DefaultState: Enable
 
-main.lua
-fonts.lua
 auto_vendor_and_repair.lua
-tooltip_ids.lua
 bags.lua
 bars.lua
+buffs.lua
+fonts.lua
+main.lua
+tooltip_ids.lua
