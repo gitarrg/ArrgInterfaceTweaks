@@ -3,6 +3,7 @@
 
 local BARS = {
 
+    ["ActionButton"] = true,
     ["MainMenuBar"] = true,
 
     ["MultiBarBottomLeft"] = true,

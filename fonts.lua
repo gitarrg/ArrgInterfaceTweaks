@@ -23,3 +23,17 @@ if WeakAuras then
     WeakAuras.defaultFontSize = 12
 end
 
+
+
+-- Buff and Debuff Frame
+local function set_duration_font(frame)
+    for _, auraFrame in ipairs(frame.auraFrames) do
+        if auraFrame and auraFrame.Duration and auraFrame.Duration.SetFont then
+            auraFrame.Duration:SetFont(FONT_NAME, 12, "")
+        end
+    end
+end
+
+set_duration_font(BuffFrame)
+set_duration_font(DebuffFrame)
+
