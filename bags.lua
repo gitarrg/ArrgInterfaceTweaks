@@ -29,7 +29,7 @@ local BIND_TEXT = {
     -- [Enum.ItemBind.OnAcquire or 1] = "BoP",
     [Enum.ItemBind.OnEquip or 2] = "BoE",
     [Enum.ItemBind.OnUse or 3] = "BoU",
-    [Enum.ItemBind.ToBnetAccount or 8] = "BoA",
+    [Enum.ItemBind.ToBnetAccount or 8] = "A",
     [Enum.ItemBind.ToBnetAccountUntilEquipped or 9] = "WuE",
 }
 

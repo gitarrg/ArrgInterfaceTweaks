@@ -13,3 +13,5 @@ buffs.lua
 fonts.lua
 main.lua
 tooltip_ids.lua
+ilvl.lua
+
