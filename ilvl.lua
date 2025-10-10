@@ -460,7 +460,6 @@ eventFrame:SetScript("OnEvent", function(_, event, ...)
 
     -- An equipment slot is changed
     if (event == "PLAYER_EQUIPMENT_CHANGED" and characterWindowOpen) then
-        print("PLAYER_EQUIPMENT_CHANGED", ...)
         local slot = ...
         updateSlot("player", slot)
     end
