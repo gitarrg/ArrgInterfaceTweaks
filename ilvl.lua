@@ -54,6 +54,19 @@ local SLOTS = {
 }
 
 
+-- todo: check if this is loaded on login
+-- if not, it has to go into the event callback
+local is_remix = C_UnitAuras.GetPlayerAuraBySpellID(1232454)
+
+if is_remix then
+    -- no enchants on remix
+    for _, slot_info in pairs(SLOTS) do
+        slot_info.enchantable = false
+    end
+end
+
+
+
 local TooltipDataType = {
     Enchant = 15,
     UpgradeTrack = 42,
