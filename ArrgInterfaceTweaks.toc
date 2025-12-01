@@ -6,6 +6,8 @@
 ## OptionalDeps: WeakAuras
 ## DefaultState: Enable
 
+
+constants.lua
 auto_vendor_and_repair.lua
 bags.lua
 bars.lua
