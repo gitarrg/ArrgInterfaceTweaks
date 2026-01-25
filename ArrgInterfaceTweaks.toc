@@ -1,10 +1,15 @@
-## Interface: 110100
+## Interface: 120000, 120001
 ## Title: Arrg Interface Tweaks
 ## Version: @project-version@
 ## IconTexture: Interface\AddOns\ArrgInterfaceTweaks\media\icons\peepoHappySquare.png
 ## Author: Arrg
-## OptionalDeps: WeakAuras
 ## DefaultState: Enable
+
+
+# Libs
+Libs/LibStub/LibStub.lua
+Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua
+Libs/LibSharedMedia-3.0/LibSharedMedia-3.0.lua
 
 
 constants.lua
@@ -16,4 +21,3 @@ fonts.lua
 main.lua
 tooltip_ids.lua
 ilvl.lua
-
