@@ -31,14 +31,14 @@ local characterWindowOpen = false
 
 ---@type table<number, SlotInfo>
 local SLOTS = {
-    [1]  = {name="Head", side="l" },
+    [1]  = {name="Head", side="l", enchantable=true},
     [2]  = {name="Neck", side="l" },
-    [3]  = {name="Shoulder", side="l" },
-    [15] = {name = "Back", side="l", enchantable=true },
+    [3]  = {name="Shoulder", side="l", enchantable=true},
+    [15] = {name = "Back", side="l"},
     [5]  = {name="Chest", side="l", enchantable=true },
     [4]  = {name="Shirt", side="l" },
     [19] = {name = "Tabard", side="l"},
-    [9]  = {name = "Wrist", side="l", enchantable=true},
+    [9]  = {name = "Wrist", side="l"},
     
     [6]  = {name = "Waist", side="r"},
     [7]  = {name = "Legs", side="r", enchantable=true},
